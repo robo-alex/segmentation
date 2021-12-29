@@ -101,6 +101,7 @@ def read_sensor(nusc, token):
     sensor_from_ego = transform_matrix(calib['translation'], Quaternion(calib['rotation']), inverse=True)
     ego_from_global = transform_matrix(ego['translation'], Quaternion(ego['rotation']), inverse=True)
     sensor_from_global = np.dot(sensor_from_ego, ego_from_global)
+    
     return sensor_path, sensor_boxes, sensor_intrinsic, sensor_from_global, global_from_sensor
 
 def translate_box(nusc, box, sample, prev_sample):
