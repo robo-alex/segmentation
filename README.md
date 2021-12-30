@@ -1,3 +1,3 @@
 # detection
 
-Calculate acc on NuScenes
+Metrics on NuScenes dataset
