@@ -4,8 +4,8 @@ import open3d
 from pathlib import Path
 
  
-points_dir = Path('/home/ou/Documents/dataset/my_pvrcnn_dataset(gazebo)/kitti/object/training/velodyne') # path to .bin data
-label_dir = Path('/home/ou/workspace/code/Cylinder3D-master/my_result') # path to .label data
+points_dir = Path('/data3/zmt/dataset/SemanticKITTI/sequences/') # path to .bin data
+label_dir = Path('/data3/zmt/dataset/SemanticKITTI/sequences/') # path to .label data
 
 label_filter = [40, 48, 70, 72]    # object's label which you wan't to show
 # label_filter = []
